@@ -33,6 +33,7 @@ public class ApplicationContextBasicFindTest {
     void findBeanByName2(){
         MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
         Assertions.assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
+
     }
 
     @Test
